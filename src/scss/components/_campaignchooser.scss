@@ -1,0 +1,16 @@
+.campaign-chooser-widget {
+  height: calc(98vh - 57px);
+  border: 1px solid lightgrey;
+  width: 18vw;
+  position: fixed;
+  right: 0.5vw;
+  background: white;
+  animation: moveInRight 0.5s;
+  top: calc(55px + 1vh);
+  text-align: center;
+
+  &--small {
+    top: calc(55px + 1vh);
+    height: 25vh;
+  }
+}

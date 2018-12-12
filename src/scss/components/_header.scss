@@ -1,0 +1,66 @@
+.header {
+  background-image: linear-gradient(to right, #0d98e6, #0dd2e6);
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0 3vw;
+  transition: 0.5s ease-in-out;
+  width: 100vw;
+  // &--narrow {
+  //   width: 82vw;
+  //   margin-left: 18vw;
+  // }
+  &__section {
+    display: flex;
+    align-items: center;
+
+    &--left {
+    }
+
+    &--right {
+      min-width: 300px;
+      width: 20vw;
+      justify-content: space-between;
+    }
+  }
+
+  &__menu {
+    padding: 0 2vw 0 0;
+  }
+
+  .navLink:hover {
+    cursor: pointer;
+  }
+
+  &__user-info {
+    display: flex;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      margin: 0 2vw;
+    }
+    &--name {
+      font-size: 1rem;
+    }
+    &--campaign {
+      font-size: 0.8rem;
+    }
+    &--img {
+      flex-basis: 1;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}
