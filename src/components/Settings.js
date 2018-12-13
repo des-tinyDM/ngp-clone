@@ -44,10 +44,9 @@ class SettingsPage extends Component {
       case "#4caf50":
         backgroundClass = "green";
         break;
-      case "#4caf50":
+      case "##8bc34a":
         backgroundClass = "lightgreen";
         break;
-
       default:
         backgroundClass = "";
     }
