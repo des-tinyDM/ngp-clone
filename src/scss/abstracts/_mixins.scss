@@ -1,0 +1,7 @@
+@mixin background($color) {
+  background-image: linear-gradient(
+    to right,
+    darken($color, 2%),
+    lighten($color, 2%)
+  );
+}

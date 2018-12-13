@@ -11,7 +11,7 @@ class Header extends Component {
   render() {
     return (
       <div
-        className={`${
+        className={`${this.props.background} ${
           this.props.menuOpen ? "header header--narrow" : "header"
         }`}
       >

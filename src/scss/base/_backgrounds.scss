@@ -1,0 +1,36 @@
+.red {
+  @include background($clr-red);
+}
+.magenta {
+  @include background($clr-magenta);
+}
+.lightblue {
+  @include background($clr-lightblue);
+}
+.purple {
+  @include background($clr-purple);
+}
+.darkpurple {
+  @include background($clr-darkpurple);
+}
+.navy {
+  @include background($clr-navy);
+}
+.skyblue {
+  @include background($clr-skyblue);
+}
+.lightblue {
+  @include background($clr-lightblue);
+}
+.torquoise {
+  @include background($clr-turquoise);
+}
+.darkgreen {
+  @include background($clr-darkgreen);
+}
+.green {
+  @include background($clr-green);
+}
+.lightgreen {
+  @include background($clr-lightgreen);
+}

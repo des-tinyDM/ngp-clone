@@ -1,5 +1,4 @@
 .header {
-  background-image: linear-gradient(to right, #0d98e6, #0dd2e6);
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -13,6 +12,7 @@
   //   width: 82vw;
   //   margin-left: 18vw;
   // }
+
   &__section {
     display: flex;
     align-items: center;

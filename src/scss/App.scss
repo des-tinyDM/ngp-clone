@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/backgrounds";
+
+@import "components/page";
+
+@import "components/header";
+@import "components/drawer";
+@import "components/alertwidget";
+@import "components/campaignchooser";
+@import "components/dashboard";

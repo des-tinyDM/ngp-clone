@@ -10,14 +10,36 @@
   // left: 0.5vw;
   animation: moveInLeft 1s;
   box-shadow: 1px 1px 1px rgba(00, 00, 00, 0.3);
+  &__close {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    color: white;
+    font-size: 24px;
 
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      text-shadow: 0 0 10px darken(#999, 20%);
+    }
+  }
   &__header {
-    background-image: linear-gradient(to right, darken(#0d98e6, 10%), #0d98e6);
     // height: 165px;
     color: white;
     display: flex;
     flex-direction: column;
     padding: 4vh 2vw;
+    & span {
+      width: 100%;
+      height: fit-content;
+      padding: 3% 5%;
+      margin: 2vh auto;
+      background: white;
+    }
+    & img {
+      width: 100%;
+      margin: 0 auto;
+    }
 
     & h2 {
       font-size: 22px;
@@ -33,5 +55,25 @@
   &__navigation {
     display: flex;
     flex-direction: column;
+    & .divider {
+      margin: 1.5vh auto;
+      width: 80%;
+    }
+    &-link {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      padding: 1.5vh auto;
+      height: 40px;
+      margin: 5px auto 0 auto;
+      width: 96%;
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background: lightgrey;
+      }
+    }
   }
 }
