@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { NavLink as Link } from "react-router-dom";
 
 import userImg from "./me.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 class Header extends Component {
   constructor(props) {
@@ -16,26 +18,35 @@ class Header extends Component {
         }`}
       >
         <section className="header__section--left header__section">
-          <i
+          <FontAwesomeIcon
+            icon={["fas", "bars"]}
+            className="header__menu navLink"
             onClick={() => this.props.menuClick()}
-            className="header__menu fa fa-bars navLink"
             title="Open the menu"
           />
+
           <span title="Navigate to the home page">Grassroots</span>
         </section>
         <section className="header__section--right header__section">
-          <i
-            className="navLink fas fa-th"
+          <FontAwesomeIcon
+            icon={["fas", "th"]}
+            className="navLink"
             onClick={() => this.props.chooserClick()}
             title="Switch active campaign"
           />
-          <i
-            className="navLink fa fa-bell"
+
+          <FontAwesomeIcon
+            icon={["fas", "bell"]}
+            className="navLink"
             onClick={() => this.props.alertsClick()}
             title="Open the alerts widget"
           />
           <Link to="/settings">
-            <i className="navLink fas fa-cogs" title="Open the settings page" />
+            <FontAwesomeIcon
+              icon={["fas", "cogs"]}
+              className="navLink"
+              title="Navigate to the Settings Page"
+            />{" "}
           </Link>
           <div className="header__user-info" title="Edit and view your profile">
             <div className="header__user-info--left">

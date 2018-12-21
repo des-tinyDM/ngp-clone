@@ -1,7 +1,7 @@
 const CHANGE_COLOR = "CHANGE_COLOR";
 
 const initialState = {
-  color: "red"
+  color: "lightblue"
 };
 
 export function updateColorScheme(color) {

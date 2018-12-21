@@ -34,3 +34,54 @@
 .lightgreen {
   @include background($clr-lightgreen);
 }
+
+// TEXT-COLORS
+
+.text-red {
+  @include font-color($clr-red);
+}
+.text-magenta {
+  @include font-color($clr-magenta);
+}
+.text-lightblue {
+  @include font-color($clr-lightblue);
+
+  &:hover {
+    background: red;
+    & * {
+      color: white;
+      transition: 0.3s;
+    }
+  }
+  & * {
+    color: $clr-lightblue;
+    transition: 0.3s;
+  }
+}
+.text-purple {
+  @include font-color($clr-purple);
+}
+.text-darkpurple {
+  @include font-color($clr-darkpurple);
+}
+.text-navy {
+  @include font-color($clr-navy);
+}
+.text-skyblue {
+  @include font-color($clr-skyblue);
+}
+.text-lightblue {
+  @include font-color($clr-lightblue);
+}
+.text-torquoise {
+  @include font-color($clr-turquoise);
+}
+.text-darkgreen {
+  @include font-color($clr-darkgreen);
+}
+.text-green {
+  @include font-color($clr-green);
+}
+.text-lightgreen {
+  @include font-color($clr-lightgreen);
+}

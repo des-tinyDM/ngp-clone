@@ -59,20 +59,29 @@
       margin: 1.5vh auto;
       width: 80%;
     }
+    &-icon {
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      // border: 1px solid black;
+      margin: 0 5px;
+    }
     &-link {
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-      padding: 1.5vh auto;
+      padding: 1.5vh 1vw;
       height: 40px;
       margin: 5px auto 0 auto;
-      width: 96%;
+      width: 95%;
       text-decoration: none;
       color: black;
       display: flex;
       align-items: center;
+      transition: 0.1s;
 
       &:hover {
-        background: lightgrey;
+        transition: 0.1s;
+        background: darken($clr-lightblue, 10%);
       }
     }
   }

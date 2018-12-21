@@ -28,7 +28,10 @@
   }
 
   &__menu {
-    padding: 0 2vw 0 0;
+    // padding: 0 2vw 0 0;
+    &.navLink {
+      margin-right: 4vw;
+    }
   }
 
   .navLink:hover {

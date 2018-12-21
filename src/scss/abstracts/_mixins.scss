@@ -5,3 +5,8 @@
     lighten($color, 2%)
   );
 }
+
+@mixin font-color($color) {
+  color: ($color);
+  transition: 0s all;
+}

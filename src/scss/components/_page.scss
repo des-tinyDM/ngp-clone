@@ -1,3 +1,23 @@
 .page {
-  padding: 2vh 2vw;
+  // margin: 5vh 2vw;
+  padding: 0.5vh 0;
+  height: 100%;
+  // border: 1px solid black;
+
+  & h1 {
+    font-size: 1rem;
+  }
+
+  &__header {
+    background: white;
+    padding: 1.5vh 2vw;
+    // height: 5%;
+  }
+
+  &__body {
+    background: white;
+    margin-top: 1vh;
+    padding: 2vh 2vw;
+    height: 92%;
+  }
 }

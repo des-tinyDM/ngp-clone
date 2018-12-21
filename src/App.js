@@ -58,7 +58,9 @@ class App extends Component {
         )}
         {alertsOpen && <AlertWidget small={campaignChooserOpen} />}
         {campaignChooserOpen && <CampaignChooserWidget small={alertsOpen} />}
-        <div className="dashboard">{Main}</div>
+        <div className={`${menuOpen ? "dashboard min" : "dashboard"}`}>
+          {Main}
+        </div>
       </div>
     );
   }

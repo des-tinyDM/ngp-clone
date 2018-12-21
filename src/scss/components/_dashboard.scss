@@ -2,4 +2,10 @@
   background: #e9ebed;
   height: calc(100vh - 55px);
   width: 100vw;
+  padding: 2vh 1vw;
+
+  &.min {
+    width: 82vw;
+    margin: 0 0 0 18vw;
+  }
 }
